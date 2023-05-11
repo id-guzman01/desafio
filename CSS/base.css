@@ -1,0 +1,41 @@
+/*Definiendo colores de la interfaz*/
+:root{
+    --navy: #070A52;
+    --red1: #ED2B2A;
+}
+
+
+/*Formateando el documento*/
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Aplicanto la grilla al body*/
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70px 7000px 70px;
+    grid-gap: 20px
+}
+
+/*Aplicando la grilla a cada parte*/
+#cabeza{
+    grid-column: 1;
+    grid-row: 1;
+    background-color: var(--red1);
+}
+
+#principal{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#pie_pagina{
+    grid-column: 1;
+    grid-row: 3;
+    background-color: var(--navy);
+    color: white;
+}

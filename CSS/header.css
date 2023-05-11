@@ -1,0 +1,44 @@
+/*Estilos al header con el nav*/
+#cabeza{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#picture_logo{
+    display: flex;
+    width: 120px;
+    height: 80px;
+    margin: -5px 0 0 15px;
+}
+
+#logo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 0 25px 0 0;
+}
+
+.btn_nav{
+    text-decoration: none;
+    background: transparent;
+    width: 80px;
+    text-align: center;
+    padding: 10px 1px;
+    border-radius: 10px;
+    color: white;
+    margin: 0 -15px 0 0;
+    border-bottom: 1px solid var(--navy);
+}
+
+.btn_nav:hover{
+    transition: all .9s ease;
+    background: var(--navy);
+}
+
