@@ -17,8 +17,9 @@
 body{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 70px 7000px 70px;
-    grid-gap: 20px
+    grid-template-rows: 70px 6590px 180px;
+    grid-gap: 20px;
+    background: #E4DCCF;
 }
 
 /*Aplicando la grilla a cada parte*/
@@ -36,6 +37,38 @@ body{
 #pie_pagina{
     grid-column: 1;
     grid-row: 3;
-    background-color: var(--navy);
+
+
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25px 100px 25px;
+    gap: 2% 0;
+    grid-template-areas: 
+    "sociales sociales"
+    "empresa contacto"
+    "derechos derechos";
+    
+    background: var(--navy);
+    bottom: 0;
     color: white;
 }
+
+
+#footer_sociales{
+    grid-area: sociales;
+    display: flex;
+}
+
+#footer_info{
+    grid-area: empresa;
+}
+
+#footer_contacto{
+    grid-area: contacto;
+}
+
+#footer_derechos{
+    grid-area: derechos;
+}
+

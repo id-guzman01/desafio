@@ -16,11 +16,11 @@
         </picture>
 
         <nav id="menu">
-            <a class="btn_nav" href="">Inicio</a>
-            <a class="btn_nav" href="">Biografía</a>
-            <a class="btn_nav" href="">Integrantes</a>
-            <a class="btn_nav" href="">Discografía</a>
-            <a class="btn_nav" href="">Suscribete</a>
+            <a class="btn_nav" href="#inicio">Inicio</a>
+            <a class="btn_nav" href="#biografia">Biografía</a>
+            <a class="btn_nav" href="#integrantes">Integrantes</a>
+            <a class="btn_nav" href="#discografia">Discografía</a>
+            <a class="btn_nav" href="#suscribete">Suscribete</a>
         </nav>
     </header>
     
@@ -65,7 +65,7 @@
 
         
     <!-- Sección de quienes son -->
-    <section class="seccion">
+    <section class="seccion" id="biografia">
 
         <h2 class="subtitulo">Biografía</h2>
         <p class="parrafo parrafo_1">
@@ -86,7 +86,7 @@
 
 
     <!-- Sección de integrantes -->
-    <section class="seccion">
+    <section class="seccion" id="integrantes">
         <h2 class="subtitulo">Integrantes</h2>
 
         <p class="parrafo parrafo_1">
@@ -159,12 +159,15 @@
             </section>
         </article>
 
-        <p class="parrafo parrafo_final">
-            Nicolai Fella señala que desde el lanzamiento formal de Los Petit Fellas, el crecimiento y evolución de la agrupación es evidente en la madurez de su propuesta sonora y el contenido de sus letras con un espíritu urbano latente y alta carga humana y social al despojarse por completo del miedo a expresar su arte traducido en rimas.
-
-        </p>
-        <p id="parrafo_cita">Los Petit Fellas es un lugar, son cinco amigos por la música, una idea, un concepto, un momento, una canción que se regala.</p>
-        <p id="cita">~ by LosPetitFellas</p>
+        <article>
+            <p class="parrafo parrafo_final">
+                Nicolai Fella señala que desde el lanzamiento formal de Los Petit Fellas, el crecimiento y evolución de la agrupación es evidente en la madurez de su propuesta sonora y el contenido de sus letras con un espíritu urbano latente y alta carga humana y social al despojarse por completo del miedo a expresar su arte traducido en rimas.
+            </p>
+            <section>
+                <p id="parrafo_cita">Los Petit Fellas es un lugar, son cinco amigos por la música, una idea, un concepto, un momento, una canción que se regala.</p>
+                <p id="cita">~ by LosPetitFellas</p>
+            </section>
+        </article>
 
         <picture class="picture_seccion">
             <img class="img_seccion" src="../assets/petitFella-eltiempo-012.jpeg" title="Integrantes de la agrupación" alt="Integrantes de la agrupación colombiana LosPetitFellas">
@@ -174,7 +177,7 @@
 
 
     <!-- Sección de Discografia -->
-    <section class="seccion">
+    <section class="seccion" id="discografia">
         <h2 class="subtitulo">Discografía</h2>
 
         <h3 class="titulo3">Top 10 de las canciones más escuchadas</h3>
@@ -327,59 +330,79 @@
     </section>
 
     <!-- Sección para suscribirse -->
-    <section class="seccion">
-        <h2 class="subtitulo">Suscribete para que recibas más información</h2>
+    <section class="seccion" id="suscribete">
 
-        <form action="" method="post">
-            <fieldset>
-                <label for="nombres">Nombres</label>
-                <input type="text" name="nombres" id="nombres">
-            </fieldset>
-            <fieldset>
-                <label for="primer_apellido">Primer Apellido:</label>
-                <input type="text" name="primer_apellido" id="primer_apellido">
-            </fieldset>
-            <fieldset>
-                <label for="segundo_apellido">Segundo apellido:</label>
-                <input type="text" name="segundo_spellido" id="segundo_spellido">
-            </fieldset>
-            <fieldset>
-                <label for="tipo_documento">Tipo de documento</label>
-                <select name="tipo_documento" id="tipo_documento">
-                    <option value="0">Seleccione</option>
-                    <option value="1">Documento de identidad</option>
-                    <option value="2">Cedula de ciudadania</option>
-                </select>
-            </fieldset>
-            <fieldset>
-                <label for="no_documento">No. Documento</label>
-                <input type="number" name="no_documento" min="0" id="no_documento">
-            </fieldset>
-            <fieldset>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-            </fieldset>
+        <article id="article_suscribete">
+            <h2 class="subtitulo">Suscribete</h2>
 
-            <fieldset>
-                <input type="checkbox" name="terminos" id="terminos">
-                <label for="terminos">Aceptos los terminos y condiciones de uso</label>
-            </fieldset>
-            <fieldset>
-                <input type="checkbox" name="envio_correos" id="envio_correos">
-                <label for="evio_correos">Permitir que envios mensajes de correo electronico para informar sobre nueva publicaciones nuestras</label>
-            </fieldset>
+            <section>            
+                <p class="parrafo parrafo_final">
+                Suscribete para que puedas seguir disfrutando de nuestro contenido y estar al tanto de las últimas publicaciones de nuestro mejores editores y escritores.
+                </p>
+            </section>
+        </article>
 
+
+        <picture id="pciture_img_formulario">
+            <img src="../assets/Exciting news-amico.svg" alt="Imagen de las noticias">
+        </picture>
+
+        <form action="#" method="post" id="formulario">
             <fieldset>
-                <button type="submit">Suscribete</button>
+                <label for="nombres" class="form_label">Nombre:</label>
+                <input type="text" class="form_input" name="nombres" id="nombres" placeholder="Nombres" required>
+            </fieldset>
+    
+            <fieldset>
+                <label for="email" id="form_label_email">Email:</label>
+                <input type="email" class="form_input" name="email" id="email" placeholder="abc@ejemplo.com" required>
+            </fieldset>
+    
+            <fieldset>
+                <input type="checkbox" name="terminos" id="terminos" required>
+                <label for="terminos" id="">Aceptos los terminos y condiciones de uso de la plataforma</label>
+            </fieldset>
+    
+            <fieldset>
+                <button type="submit" id="form_btn">Suscribete</button>
             </fieldset>
         </form>
+
+
+
 
     </section>
 
     </main>
 
     <footer id="pie_pagina">
-        <p><span>&copy;</span> Todos los derechos reservados</p>
+
+        <section id="footer_sociales">
+            <p>Siguenos en nuestras redes sociales</p>
+            <nav id="footer_sociales_btn">
+                <a class="footer_icono_sociales" href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="footer_icono_sociales" href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a class="footer_icono_sociales" href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a class="footer_icono_sociales" href="#" title="Nuestra Web"><i class="fa-solid fa-globe"></i></a>
+            </nav>
+        </section>
+
+        <section id="footer_info">
+            <h3 id="footer_nombre_empresa">Flexible Web</h3>
+            <p>Hacemos tus ideas realidad, diseñamos y programamos software a la medida perfecta para ti y tu empresa.</p>
+        </section>
+
+        <section id="footer_contacto">
+            <h4 id="footer_titulo_contacto">Medios de comunicación</h4>
+            <p class="footer_contanto_texto"><i class="fa-solid fa-envelope"></i>  info@flexibleweb.com</p>
+            <p class="footer_contanto_texto"><i class="fa-solid fa-mobile"></i>  +57 3005742345</p>
+            <p>Atención personal y atenta las 24/7.</p>
+        </section>
+
+        <section id="footer_derechos">
+            <p>Copyright <span>&copy;</span> 2023 Flexible Web</p>
+        </section>
+        
     </footer>
 
 
