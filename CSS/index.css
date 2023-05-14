@@ -95,7 +95,7 @@
 .picture_seccion{
     margin: 0 auto;
     display: flex;
-    width: 75%;
+    width: 90%;
 }
 
 .img_seccion{
@@ -270,7 +270,7 @@
 @media screen and (max-width:720px){
 
     body{
-        grid-template-rows: 110px 8240px 268px;
+        grid-template-rows: 110px 7990px 268px;
     }
 
     /*Responsivo:Menu Horizontal*/
@@ -374,10 +374,9 @@
 
     /*Responsivo: Formulario*/
     #suscribete{
-
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 150px 150px 205px;
+        grid-template-rows: 150px 150px 235px;
         gap: 1% 0;
     }
     
@@ -480,9 +479,29 @@
 @media screen and (max-width:480px){
 
     body{
-        grid-template-rows: 110px 8040px 268px;
+        grid-template-rows: 110px 8170px 268px;
     }
 
+    #menu{
+        font-size: 12px;
+    }
+
+    .btn_nav{
+        width: 18%;
+    }
+
+
+    /*Responsivo: Redes sociales*/
+    #sociales{
+        width: 30px;
+    }
+
+    .img_social{
+        font-size: 15px;
+    }
+
+
+    /*Responsivo: Titulos*/
     #titulo_pagina{
         font-size: 27px;
     }
@@ -501,6 +520,48 @@
         margin: 25px 0 0 0;
     }
 
+}    
+
+
+@media screen and (max-width:412px){
+
+    body{
+        grid-template-rows: 110px 8290px 268px;
+    }
+
+    #picture_logo{
+        width: 90px;
+        height: 50px;
+        margin: 27px 0 0 10px;
+    }
+
+    #menu{
+        font-size: 10px;
+    }
+
+    .btn_nav{
+        width: 17%;
+    }
+
+    /*Responsivo: Titulos*/
+    #titulo_pagina{
+        font-size: 25px;
+    }
+    
+    .subtitulo{
+        font-size: 19px;
+    }
+    
+    .titulo3{
+        font-size: 13px;
+    }
+
+    /*Responsivo: Formulario*/
+    #suscribete{
+        display: grid;
+        grid-template-rows: 150px 150px 205px;
+
+    }
 
 }    
 
