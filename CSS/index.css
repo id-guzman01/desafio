@@ -3,16 +3,7 @@
 @import url('./header.css');
 @import url('./footer.css');
 
-
-
-/*Definición del tamaño del main (Principal)*/
-#principal{
-    width: 100%;
-}
-
-
 /*Estilos a las redes sociales de la banda*/
-
 #sociales{
     display: block;
     width: 45px;
@@ -41,78 +32,12 @@
     color: var(--red1);
 }
 
-
-
-
-/*Estilos de las secciones*/
-.seccion{
-    width: 70%;
-    margin: 0 auto;
-    margin-bottom: 40px;
-}
-
-
-/*Tiulos y subtitulos*/
-
-#titulo_pagina{
-    text-align: center;
-    margin: 10px 0 25px 0;
-    font-size: 40px;
-}
-
-.subtitulo{
-    text-align: center;
-    margin: 10px 0 18px 0;
-    font-size: 28px;
-}
-
-.titulo3{
-    margin: 10px 0 18px 5%;
-    font-size: 21px;
-}
-
-
-
-/*Estilos de los parrafos*/
-.parrafo{
-    text-align: justify;
-}
-
-.parrafo_1{
-    margin: 0 0 13px 0;
-}
-
-.parrafo_2{
-    margin: 0 0 10px 0;
-}
-
-.parrafo_final{
-    margin: 0 0 17px 0;
-}
-
-
-/*Estilos de imagenes*/
-.picture_seccion{
-    margin: 0 auto;
-    display: flex;
-    width: 90%;
-}
-
-.img_seccion{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-
-
 /*Sección de integrantes*/
 .seccion_integrantes{
     display: grid;
     grid-template-columns: 400px 1fr;
     grid-template-rows: 100%;
     margin: 0 0 20px 0;
-
     border: 1.5px solid black;
     padding: 10px 0 10px 0;
     border-radius: 15px;
@@ -123,12 +48,6 @@
     width: 70%;
     height: 80%;
     margin-left: 15%;
-}
-
-.picture_integrantes img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .texto_integrantes{
@@ -150,7 +69,6 @@
     font-style: italic;
     margin: 0 0 20px 0;
 }
-
 
 /*Seccion discografia*/
 #canciones_top{
@@ -175,11 +93,6 @@
     
 }
 
-.picture_album img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .seccion_album{
     grid-column: 2/2;
@@ -190,12 +103,8 @@
     margin: 0 0 10px 0;
 }
 
-
-
 /*Sección del formulario*/
-
 #suscribete{
-
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100px 250px;
@@ -203,7 +112,6 @@
     grid-template-areas: 
     "cabeza cabeza"
     "imagen formulario";
-
     border: 1px solid var(--navy);
     border-radius: 5px;
 }
@@ -218,16 +126,14 @@
     height: 100%;
 }
 
-#pciture_img_formulario img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
 #formulario{
     grid-area: formulario;
 }
 
+#parrafo_formulario{
+    margin-left: 2%;
+    margin-right: 2%;
+}
 
 #formulario{
     margin-top: 8%;
@@ -263,22 +169,20 @@
     color: white;
     border-radius: 5px;
     border-bottom: 1px solid var(--navy);
-}
-
+} 
 
 /*Responsivo screen 720px*/
-@media screen and (max-width:720px){
+@media (max-width:720px){
 
     body{
         grid-template-rows: 110px 7990px 268px;
     }
 
     /*Responsivo:Menu Horizontal*/
-
-    
     #picture_logo{
         width: 110px;
         height: 70px;
+        margin: 20px 0 0 15px;
     }
 
     #menu{
@@ -286,7 +190,6 @@
         justify-content: center;
         font-size: 14px;
     }
-
 
     /*Responsivo: Redes sociales*/
     #sociales{
@@ -297,10 +200,7 @@
         font-size: 20px;
     }
 
-
-
     /*Titulos, subtitulos, titulos de 3 nivel*/
-
     #titulo_pagina{
         font-size: 30px;
     }
@@ -312,7 +212,6 @@
     .titulo3{
         font-size: 18px;
     }
-
 
     /*Responsivo: Integrantes*/
     .seccion_integrantes{
@@ -339,22 +238,18 @@
         text-align: center;
     }
 
-    
     /*Responsivo: Discografia*/
-
     .articulo_album{
         grid-template-columns: 100%;
         grid-template-rows: 200px 1fr;
         margin: 0 0 20px 0;
-    
         padding: 10px 0 10px 0;
     }
     
     .picture_album{
         grid-column: 1/1;
         width: 55%;
-        margin: 0 auto;
-        
+        margin: 0 auto;   
     }
     
     .seccion_album{
@@ -370,7 +265,6 @@
     .lista_canciones{
         margin: 10px 0 10px 13%;
     }
-
 
     /*Responsivo: Formulario*/
     #suscribete{
@@ -403,7 +297,7 @@
     
     #form_label_email{
         margin-left: 4.7%;
-        margin-right: 7%;
+        margin-right: 5%;
     }
     
     .form_input{
@@ -425,14 +319,27 @@
         margin-left: 32.5%;
     }
 
-    /*Responsivo: Footer*/
+    #field_terminos{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -10px;
+    }
 
+    #terminos{
+        margin-left: 4.7%;
+    }
+
+    #label_terminos{
+        width: 90%;
+        padding-top: 2.8%;
+    }
+
+    /*Responsivo: Footer*/
     #pie_pagina{
         grid-template-columns: 100%;
         grid-template-rows: 25px 100px 100px 25px;
         gap: 2% 0;
     }
-    
     
     #footer_sociales{
         grid-column: 1;
@@ -456,7 +363,6 @@
         grid-row: 4;
     }
     
-
     #footer_info{
         margin: 2.5% 0 20px 10%;
         width: 80%;
@@ -472,8 +378,7 @@
         width: 80%;
     }
 
-  }
-
+}
 
   /*Responsivo: 480px*/
 @media screen and (max-width:480px){
@@ -520,9 +425,28 @@
         margin: 25px 0 0 0;
     }
 
+    #form_label_email{
+        margin-left: 4.7%;
+        margin-right: 6%;
+    }
+
+    #field_terminos{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #terminos{
+        margin-left: 3.4%;
+    }
+
+    #label_terminos{
+        width: 90%;
+        padding-top: 5%;
+    }
+
 }    
 
-
+/*Responsivo: 412*/
 @media screen and (max-width:412px){
 
     body{
@@ -560,8 +484,11 @@
     #suscribete{
         display: grid;
         grid-template-rows: 150px 150px 205px;
-
     }
 
-}    
+    #form_label_email{
+        margin-left: 4.7%;
+        margin-right: 7%;
+    }
 
+}   

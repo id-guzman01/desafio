@@ -4,14 +4,12 @@
     --red1: #ED2B2A;
 }
 
-
 /*Formateando el documento*/
 *{
     border: 0;
     margin: 0;
     padding: 0;
 }
-
 
 /*Aplicanto la grilla al body*/
 body{
@@ -37,9 +35,7 @@ body{
 #pie_pagina{
     grid-column: 1;
     grid-row: 3;
-
     overflow-x: hidden;
-
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 25px 100px 25px;
@@ -48,12 +44,11 @@ body{
     "sociales sociales"
     "empresa contacto"
     "derechos derechos";
-    
+
     background: var(--navy);
     bottom: 0;
     color: white;
 }
-
 
 #footer_sociales{
     grid-area: sociales;
@@ -72,4 +67,62 @@ body{
     grid-area: derechos;
 }
 
+/*Estilos de imagenes de sección*/
+.picture_seccion{
+    margin: 0 auto;
+    display: flex;
+    width: 90%;
+}
 
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*Definición del tamaño del main (Principal)*/
+#principal{
+    width: 100%;
+}
+
+/*Estilos de las secciones*/
+.seccion{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/*Tiulos y subtitulos*/
+#titulo_pagina{
+    text-align: center;
+    margin: 10px 0 25px 0;
+    font-size: 40px;
+}
+
+.subtitulo{
+    text-align: center;
+    margin: 10px 0 18px 0;
+    font-size: 28px;
+}
+
+.titulo3{
+    margin: 10px 0 18px 5%;
+    font-size: 21px;
+}
+
+/*Estilos de los parrafos*/
+.parrafo{
+    text-align: justify;
+}
+
+.parrafo_1{
+    margin: 0 0 13px 0;
+}
+
+.parrafo_2{
+    margin: 0 0 10px 0;
+}
+
+.parrafo_final{
+    margin: 0 0 17px 0;
+}
