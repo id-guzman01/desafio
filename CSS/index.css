@@ -2,39 +2,7 @@
 @import url('./base.css');
 @import url('./header.css');
 @import url('./footer.css');
-
-
 @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
-
-
-/*Estilos a las redes sociales de la banda*/
-#sociales{
-    display: block;
-    width: 45px;
-    position: fixed; 
-	right: 0;
-	top: 140px;
-	z-index: 2000;
-    background: var(--navy);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-.btn_social{
-    width: 50px;
-    height: 50px;
-}
-
-.img_social{
-    color: white;
-    font-size: 30px;
-    margin: 5px 5px 5px 5px;
-}
-
-.img_social:hover{
-    transition: all .6s ease;
-    color: var(--red1);
-}
 
 /*Sección de integrantes*/
 .seccion_integrantes{
@@ -44,7 +12,6 @@
     grid-template-areas: 
     "nombre nombre"
     "picture descripcion";
-    
     border: 1.5px solid black;
     border-radius: 15px;
     padding: 10px 0 5px 0;
@@ -159,7 +126,28 @@
     margin-left: 12.5%;
 }
 
+/*Sección de redes sociales*/
+#section_social{
+    display: inline-block;
+    background-color: var(--navy);
+    margin-bottom: 1.5%;
+    margin-top: 1%;
+    margin-left: 34%;
+    padding: 5px 0 5px 0;
+    border-radius: 20px;
+}
 
+.btn_social{
+    font-size: 25px;
+    color: white;
+    margin: 5px 15px 5px 15px;
+    text-decoration: none;
+}
+
+.btn_social:hover{
+    transition: all .6s ease;
+    color: var(--red1);
+}
 
 /*Sección del formulario*/
 #suscribete{
@@ -207,7 +195,7 @@
 }
 
 #form_label_email{
-    margin: 0 4.7% 0 0;
+    margin: 0 5.5% 0 0;
 }
 
 .form_input{
@@ -238,7 +226,7 @@
 @media screen and (max-width:720px){
 
     body{
-        grid-template-rows: 110px 8600px 268px;
+        grid-template-rows: 110px 9190px 268px;
     }
 
     /*Responsivo:Menu Horizontal*/
@@ -252,15 +240,6 @@
         flex-wrap: wrap;
         justify-content: center;
         font-size: 14px;
-    }
-
-    /*Responsivo: Redes sociales*/
-    #sociales{
-        width: 35px;
-    }
-
-    .img_social{
-        font-size: 20px;
     }
 
     /*Titulos, subtitulos, titulos de 3 nivel*/
@@ -382,6 +361,17 @@
         grid-column: 1;
         grid-row: 3;
         margin-left: 20%;
+    }
+
+    /*Responsivo: Redes sociales*/
+    #section_social{
+        margin-bottom: 2%;
+        margin-left: 20%;
+        padding: 4px 0 4px 0;
+    }
+
+    .btn_social{
+        font-size: 20px;
     }
 
     /*Responsivo: Formulario*/
@@ -506,7 +496,7 @@
 @media screen and (max-width:480px){
 
     body{
-        grid-template-rows: 110px 8790px 268px;
+        grid-template-rows: 110px 9340px 268px;
     }
 
     /*Responvio: Header*/
@@ -523,17 +513,6 @@
     .btn_nav{
         width: 26%;
     }
-
-
-    /*Responsivo: Redes sociales*/
-    #sociales{
-        width: 30px;
-    }
-
-    .img_social{
-        font-size: 15px;
-    }
-
 
     /*Responsivo: Titulos*/
     #titulo_pagina{
@@ -563,6 +542,17 @@
     .nombre_album{
         font-size: 16px;
         margin-top: 5%;
+    }
+
+        /*Sección de redes sociales*/
+    #section_social{
+        margin-left: 15%;
+        padding: 4px 0 4px 0;
+    }
+    
+    .btn_social{
+        font-size: 17px;
+        margin: 5px 10px 5px 10px;
     }
 
     /*Responsivo:Formulario*/
@@ -621,7 +611,7 @@
 @media screen and (max-width:412px){
 
     body{
-        grid-template-rows: 110px 8980px 268px;
+        grid-template-rows: 110px 9520px 268px;
     }
 
     /*Responsivo: Header*/
@@ -669,6 +659,16 @@
         margin-top: 5%;
     }
 
+    /*Responsivo: Red Social*/
+    #section_social{
+        margin-left: 17%;
+        padding: 4px 0 4px 0;
+    }
+    
+    .btn_social{
+        font-size: 15px;
+        margin: 3px 7px 3px 7px;
+    }
 
     /*Responsivo: Formulario*/
     #suscribete{
