@@ -1,3 +1,4 @@
+/*Sección del footer*/
 #footer_sociales{
    margin: 0.5% 0 0 10%;
    width: 55%;
@@ -46,4 +47,52 @@
     padding: 1% 0 0 0;
 }
 
+
+@media screen and (max-width:720px){
+    
+    /*Responsivo: Footer*/
+    #pie_pagina{
+        grid-template-columns: 100%;
+        grid-template-rows: 25px 100px 100px 25px;
+        gap: 2% 0;
+    }
+    
+    #footer_sociales{
+        grid-column: 1;
+        grid-row: 1;
+        display: flex;
+        width: 100%;
+    }
+    
+    #footer_info{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #footer_contacto{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    #footer_derechos{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    #footer_info{
+        margin: 2.5% 0 20px 10%;
+        width: 80%;
+    }
+
+    #footer_nombre_empresa{
+        font-size: 16px;
+        margin: 0 0 1% 0;
+    }
+
+    #footer_contacto{
+        margin: 2.5% 0 0 10%;
+        width: 80%;
+    }
+
+}
 

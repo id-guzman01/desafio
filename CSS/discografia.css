@@ -1,0 +1,171 @@
+/*Seccion discografia*/
+#canciones_top{
+    margin: 0 0 20px 10%;
+}
+
+#all_albums{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 30px 290px 384px 364px;
+    grid-template-areas:
+    "title title" 
+    "al1 al2"
+    "al3 al4"
+    "al5 al6";
+    gap: 2% 2%;
+    margin-bottom: 9%;
+}
+
+#title_all_album{
+    grid-area: title;
+}
+
+#republica{
+    grid-area: al1;
+}
+
+#a_quemarropa{
+    grid-area: al2;
+}
+
+#buenos_dias{
+    grid-area: al3;
+}
+
+#formas{
+    grid-area: al4;
+}
+
+#souvenir{
+    grid-area: al5;
+}
+
+#historias_minimas{
+    grid-area: al6;
+}
+
+.articulo_album{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 50px 230px;
+    gap: 10px;
+    grid-template-areas: 
+    "nombre nombre"
+    "picture canciones";
+    border: 1px solid var(--navy);
+    border-radius: 5px;
+}
+
+.nombre_album{
+    grid-area: nombre;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.picture_album{
+    grid-area: picture;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 10%;
+}
+
+.lista_canciones{
+    grid-area: canciones;
+    margin-left: 12.5%;
+}
+
+@media screen and (max-width:720px){
+
+    
+    /*Responsivo: Discografia*/
+    #all_albums{
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 460px 460px 460px 630px 500px 560px;
+        gap: 0.5% 0;
+        margin-bottom: 23%;
+    }
+
+    #title_all_album{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    #republica{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #a_quemarropa{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    #buenos_dias{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    #formas{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    #souvenir{
+        grid-column: 1;
+        grid-row: 6;
+    }
+    
+    #historias_minimas{
+        grid-column: 1;
+        grid-row: 7;
+    }
+
+    .articulo_album{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 230px 50px;
+        gap: 10px;
+    }
+
+    .nombre_album{
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+    }
+
+    .picture_album{
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+        height: 90%;
+        margin: 0 auto;   
+    }
+    
+    .lista_canciones{
+        grid-column: 1;
+        grid-row: 3;
+        margin-left: 20%;
+    }
+
+}
+
+@media screen and (max-width:480px){
+
+    /*Responsivo: Album*/
+    #all_albums{
+        grid-template-rows: 50px 460px 460px 460px 630px 500px 590px;
+        margin-bottom: 35%;
+    }
+
+    .nombre_album{
+        font-size: 16px;
+        margin-top: 5%;
+    }
+
+}

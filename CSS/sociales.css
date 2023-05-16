@@ -1,0 +1,52 @@
+/*Sección de redes sociales*/
+#section_social{
+    display: inline-block;
+    background-color: var(--navy);
+    margin-bottom: 1.5%;
+    margin-top: 1%;
+    margin-left: 34%;
+    padding: 5px 0 5px 0;
+    border-radius: 20px;
+}
+
+.btn_social{
+    font-size: 25px;
+    color: white;
+    margin: 5px 15px 5px 15px;
+    text-decoration: none;
+}
+
+.btn_social:hover{
+    transition: all .6s ease;
+    color: var(--red1);
+}
+
+@media screen and (max-width:720px){
+
+    /*Responsivo: Redes sociales*/
+    #section_social{
+        margin-bottom: 2%;
+        margin-left: 20%;
+        padding: 4px 0 4px 0;
+    }
+    
+    .btn_social{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:480px){
+
+    /*Sección de redes sociales*/
+    #section_social{
+        margin-left: 15%;
+        padding: 4px 0 4px 0;
+    }
+            
+    .btn_social{
+        font-size: 17px;
+        margin: 5px 10px 5px 10px;
+    }
+
+}

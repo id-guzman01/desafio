@@ -1,0 +1,202 @@
+
+/*Sección del formulario*/
+#suscribete{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 50px 250px;
+    gap: 1% 0;
+    grid-template-areas:
+    "cabeza cabeza" 
+    "parrafo parrafo"
+    "imagen formulario";
+    border: 1px solid var(--navy);
+    border-radius: 5px;
+}
+
+#title_suscribete{
+    grid-area: cabeza;
+}
+
+#parrafo_formulario{
+    grid-area: parrafo;
+}
+
+#pciture_img_formulario{
+    grid-area: imagen;
+    width: 100%;
+    height: 100%;
+}
+
+#formulario{
+    grid-area: formulario;
+}
+
+#parrafo_formulario{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#formulario{
+    margin-top: 8%;
+}
+
+.form_label{
+    margin: 0 2% 0 0;
+}
+
+#form_label_email{
+    margin: 0 5.5% 0 0;
+}
+
+.form_input{
+    width: 50%;
+    height: 25px;
+    margin: 0 0 2.1% 0;
+    border-bottom: 1px solid var(--navy);
+    border-radius: 4px;
+}
+
+#terminos{
+    margin: 3% 0 0 0;
+    cursor: pointer;
+}
+
+#form_btn{
+    width: 35%;
+    height: 31px;
+    margin: 6% 0 0 20%;
+    cursor: pointer;
+    background-color: var(--red1);
+    color: white;
+    border-radius: 5px;
+    border-bottom: 1px solid var(--navy);
+}
+
+@media screen and (max-width:720px){
+       
+    /*Responsivo: Formulario*/
+    #suscribete{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 60px 150px 235px;
+        gap: 1% 0;
+    }
+    
+    #title_suscribete{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    #parrafo_formulario{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #pciture_img_formulario{
+        grid-column: 1;
+        grid-row: 3;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #formulario{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    .form_label{
+        margin-left: 5%;
+    }
+    
+    #form_label_email{
+        margin-left: 4.7%;
+        margin-right: 5%;
+    }
+    
+    .form_input{
+        width: 50%;
+        height: 25px;
+        margin-left: 2.1%;
+        border-bottom: 1px solid var(--navy);
+        border-radius: 4px;
+    }
+    
+    #terminos{
+        margin: 3% 0 0 0;
+    }
+    
+    #form_btn{
+        width: 35%;
+        height: 31px;
+        margin-left: 32.5%;
+    }
+
+    #field_terminos{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -10px;
+    }
+
+    #terminos{
+        margin-left: 4.7%;
+    }
+
+    #label_terminos{
+        width: 90%;
+        padding-top: 2.8%;
+    }
+
+}
+
+@media screen and (max-width:480px){
+    /*Responsivo:Formulario*/
+    #suscribete{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 100px 150px 218px;
+        gap: 1% 0;
+    }
+
+    #title_suscribete{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    #parrafo_formulario{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #pciture_img_formulario{
+        grid-column: 1;
+        grid-row: 3;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #formulario{
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #form_label_email{
+        margin-left: 4.7%;
+        margin-right: 7%;
+    }
+
+    #field_terminos{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #terminos{
+        margin-left: 5%;
+    }
+
+    #label_terminos{
+        width: 90%;
+        padding-top: 5%;
+        margin-left: 5%;
+    }
+
+}

@@ -134,3 +134,49 @@ img{
 .parrafo_final{
     margin: 0 0 17px 0;
 }
+
+@media screen and (max-width:720px){
+
+    body{
+        grid-template-rows: 110px 9190px 268px;
+    }
+
+    /*Titulos, subtitulos, titulos de 3 nivel*/
+    #titulo_pagina{
+        font-size: 30px;
+    }
+        
+    .subtitulo{
+        font-size: 24px;
+    }
+        
+    .titulo3{
+        font-size: 18px;
+    }
+    
+    .titulo4{
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width:480px){
+
+    body{
+        grid-template-rows: 230px 9340px 280px;
+    }
+
+    /*Responsivo: Titulos*/
+    #titulo_pagina{
+        font-size: 27px;
+    }
+        
+    .subtitulo{
+        font-size: 21px;
+    }
+        
+    .titulo3{
+        font-size: 15px;
+    }
+    
+}
