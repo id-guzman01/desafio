@@ -16,7 +16,7 @@
 body{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 70px 8910px 180px;
+    grid-template-rows: 70px 6970px 180px;
     grid-gap: 20px;
     background: #E4DCCF;
     font-family: 'Assistant', sans-serif;
@@ -111,6 +111,11 @@ img{
 .titulo3{
     margin: 10px 0 18px 5%;
     font-size: 21px;
+}
+
+.titulo4{
+    font-size: 15px;
+    margin: 0 0 1% 0;
 }
 
 /*Estilos de los parrafos*/
