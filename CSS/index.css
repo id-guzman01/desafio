@@ -238,7 +238,7 @@
 @media screen and (max-width:720px){
 
     body{
-        grid-template-rows: 110px 8030px 268px;
+        grid-template-rows: 110px 8600px 268px;
     }
 
     /*Responsivo:Menu Horizontal*/
@@ -276,86 +276,142 @@
         font-size: 18px;
     }
 
+    .titulo4{
+        font-size: 13px;
+    }
+
     /*Responsivo: Integrantes*/
     .seccion_integrantes{
         grid-template-columns: 100%;
-        grid-template-rows: 200px 1fr;
+        grid-template-rows: 50px 200px 1fr;
         margin: 0 0 20px 0;
         padding: 10px 0 10px 0;
+    }
+
+    .nombre_integrante{
+        grid-column: 1;
+        grid-row: 1;
+        grid-area: nombre;
+        text-align: center;
+        padding-top: 12.5px;
+        font-size: 18px;
     }
     
     .picture_integrantes{
-        margin-left: 12.5%;
-        width: 70%;
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
         height: 90%;
+        margin: 0 auto;
     }
     
-    .texto_integrantes{
-        grid-column: 1/2;
-        margin: 0 0 15px 2.5px;
-    }
-    
-    .nombre_integrante{
-        padding: 20px 0 15px 0;
-        font-size: 18px;
-        text-align: center;
-    }
-
     .descripcion_integrante{
-        margin-left: 1%;
+        grid-column: 1;
+        grid-row: 3;
+        margin: -1% 1% 6% 1%;
     }
 
     /*Responsivo: Discografia*/
-    .articulo_album{
+    #all_albums{
         grid-template-columns: 100%;
-        grid-template-rows: 200px 1fr;
-        margin: 0 0 20px 0;
-        padding: 10px 0 10px 0;
+        grid-template-rows: 50px 460px 460px 460px 630px 500px 560px;
+        gap: 0.5% 0;
+        margin-bottom: 23%;
+    }
+
+    #title_all_album{
+        grid-column: 1;
+        grid-row: 1;
     }
     
+    #republica{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #a_quemarropa{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    #buenos_dias{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
+    #formas{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    
+    #souvenir{
+        grid-column: 1;
+        grid-row: 6;
+    }
+    
+    #historias_minimas{
+        grid-column: 1;
+        grid-row: 7;
+    }
+
+    .articulo_album{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 230px 50px;
+        gap: 10px;
+    }
+
+    .nombre_album{
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+    }
+
     .picture_album{
-        grid-column: 1/1;
-        width: 55%;
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+        height: 90%;
         margin: 0 auto;   
     }
     
-    .seccion_album{
-        grid-column: 1/2;
-    }
-    
-    .nombre_album{
-        font-size: 18px;
-        margin: 15px 0 13px 0;
-        text-align: center;
-    }
-    
     .lista_canciones{
-        margin: 10px 0 10px 13%;
+        grid-column: 1;
+        grid-row: 3;
+        margin-left: 20%;
     }
 
     /*Responsivo: Formulario*/
     #suscribete{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 150px 150px 235px;
+        grid-template-rows: 50px 60px 150px 235px;
         gap: 1% 0;
     }
     
-    #article_suscribete{
+    #title_suscribete{
         grid-column: 1;
         grid-row: 1;
     }
     
-    #pciture_img_formulario{
+    #parrafo_formulario{
         grid-column: 1;
         grid-row: 2;
+    }
+    
+    #pciture_img_formulario{
+        grid-column: 1;
+        grid-row: 3;
         width: 100%;
         height: 100%;
     }
     
     #formulario{
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 4;
     }
     
     .form_label{
@@ -377,7 +433,6 @@
     
     #terminos{
         margin: 3% 0 0 0;
-        
     }
     
     #form_btn{
@@ -451,7 +506,14 @@
 @media screen and (max-width:480px){
 
     body{
-        grid-template-rows: 110px 8170px 268px;
+        grid-template-rows: 110px 8790px 268px;
+    }
+
+    /*Responvio: Header*/
+    #picture_logo{
+        width: 100px;
+        height: 60px;
+        margin: 25px 0 0 0;
     }
 
     #menu{
@@ -486,15 +548,56 @@
         font-size: 15px;
     }
 
-    #picture_logo{
-        width: 100px;
-        height: 60px;
-        margin: 25px 0 0 0;
+    /*Responsivo: Integrantes*/
+    .nombre_integrante{
+        padding-top: 10px;
+        font-size: 17px;
+    }
+
+    /*Responsivo: Album*/
+    #all_albums{
+        grid-template-rows: 50px 460px 460px 460px 630px 500px 590px;
+        margin-bottom: 35%;
+    }
+
+    .nombre_album{
+        font-size: 16px;
+        margin-top: 5%;
+    }
+
+    /*Responsivo:Formulario*/
+    #suscribete{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 100px 150px 218px;
+        gap: 1% 0;
+    }
+
+    #title_suscribete{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    #parrafo_formulario{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #pciture_img_formulario{
+        grid-column: 1;
+        grid-row: 3;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #formulario{
+        grid-column: 1;
+        grid-row: 4;
     }
 
     #form_label_email{
         margin-left: 4.7%;
-        margin-right: 6%;
+        margin-right: 7%;
     }
 
     #field_terminos{
@@ -503,12 +606,13 @@
     }
 
     #terminos{
-        margin-left: 3.4%;
+        margin-left: 5%;
     }
 
     #label_terminos{
         width: 90%;
         padding-top: 5%;
+        margin-left: 5%;
     }
 
 }    
@@ -517,9 +621,10 @@
 @media screen and (max-width:412px){
 
     body{
-        grid-template-rows: 110px 8290px 268px;
+        grid-template-rows: 110px 8980px 268px;
     }
 
+    /*Responsivo: Header*/
     #picture_logo{
         width: 90px;
         height: 50px;
@@ -544,18 +649,58 @@
     }
     
     .titulo3{
-        font-size: 13px;
+        font-size: 15px;
     }
+
+    /*Responsivo: Integrantes*/
+    .nombre_integrante{
+        padding-top: 10px;
+        font-size: 17px;
+    }
+    
+    /*Responsivo: Album*/
+    #all_albums{
+        grid-template-rows: 50px 460px 460px 460px 630px 500px 590px;
+        margin-bottom: 40%;
+    }
+    
+    .nombre_album{
+        font-size: 13px;
+        margin-top: 5%;
+    }
+
 
     /*Responsivo: Formulario*/
     #suscribete{
-        display: grid;
-        grid-template-rows: 150px 150px 205px;
+        grid-template-rows: 50px 100px 150px 218px;
+        gap: 1% 0;
+    }
+
+    #title_suscribete{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    #parrafo_formulario{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #pciture_img_formulario{
+        grid-column: 1;
+        grid-row: 3;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #formulario{
+        grid-column: 1;
+        grid-row: 4;
     }
 
     #form_label_email{
         margin-left: 4.7%;
-        margin-right: 7%;
+        margin-right: 8%;
     }
 
 }   
