@@ -3,6 +3,10 @@
 @import url('./header.css');
 @import url('./footer.css');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+
 /*Estilos a las redes sociales de la banda*/
 #sociales{
     display: block;
@@ -36,28 +40,34 @@
 .seccion_integrantes{
     display: grid;
     grid-template-columns: 400px 1fr;
-    grid-template-rows: 100%;
-    margin: 0 0 20px 0;
+    grid-template-rows: 50px 100%;
+    grid-template-areas: 
+    "nombre nombre"
+    "picture descripcion";
+    
     border: 1.5px solid black;
-    padding: 10px 0 10px 0;
     border-radius: 15px;
+    padding: 10px 0 5px 0;
+    margin: 0 0 20px 0;
+}
+
+.nombre_integrante{
+    grid-area: nombre;
+    text-align: center;
+    padding-top: 12.5px;
+    font-size: 18px;
 }
 
 .picture_integrantes{
-    grid-column: 1/1;
+    grid-area: picture;
     width: 70%;
     height: 80%;
     margin-left: 15%;
 }
 
-.texto_integrantes{
-    grid-column: 2/2;
-}
-
-.nombre_integrante{
-    padding: 20px 0 15px 0;
-    font-size: 18px;
-
+.descripcion_integrante{
+    grid-area: descripcion;
+    margin-right: 1%;
 }
 
 #parrafo_cita{
@@ -92,7 +102,6 @@
     margin: 0 auto;
     
 }
-
 
 .seccion_album{
     grid-column: 2/2;
@@ -172,10 +181,10 @@
 } 
 
 /*Responsivo screen 720px*/
-@media (max-width:720px){
+@media screen and (max-width:720px){
 
     body{
-        grid-template-rows: 110px 7990px 268px;
+        grid-template-rows: 110px 8030px 268px;
     }
 
     /*Responsivo:Menu Horizontal*/
@@ -236,6 +245,10 @@
         padding: 20px 0 15px 0;
         font-size: 18px;
         text-align: center;
+    }
+
+    .descripcion_integrante{
+        margin-left: 1%;
     }
 
     /*Responsivo: Discografia*/
@@ -392,7 +405,7 @@
     }
 
     .btn_nav{
-        width: 18%;
+        width: 26%;
     }
 
 
@@ -464,7 +477,7 @@
     }
 
     .btn_nav{
-        width: 17%;
+        width: 22%;
     }
 
     /*Responsivo: Titulos*/

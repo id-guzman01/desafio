@@ -9,15 +9,17 @@
     border: 0;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 /*Aplicanto la grilla al body*/
 body{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 70px 7210px 180px;
+    grid-template-rows: 70px 8910px 180px;
     grid-gap: 20px;
     background: #E4DCCF;
+    font-family: 'Assistant', sans-serif;
 }
 
 /*Aplicando la grilla a cada parte*/
@@ -74,6 +76,7 @@ body{
     width: 90%;
 }
 
+/*Estilos para todas las imagenes*/
 img{
     width: 100%;
     height: 100%;
