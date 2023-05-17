@@ -70,20 +70,20 @@
 
     /*Responvio: Header*/
     #picture_logo{
-        width: 110px;
-        height: 70px;
-        margin: 82.5px 0 0 75px;
+        width: 130px;
+        height: 90px;
+        margin: 80px 0 0 20px;
     }
 
     #menu{
-        display: flex;
-        flex-direction: column;
+        display: flex; 
+        flex-wrap: wrap;
         gap: 5px;
-        padding-right: 13%;
+        padding-right: 3%;
     }
 
     .btn_nav{
-        width: 100px;
+        width: 90px;
         height: 17px;
     }
 }
